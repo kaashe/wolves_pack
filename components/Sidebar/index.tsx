@@ -1,6 +1,5 @@
 import {
   Stack,
-  Heading,
   Text,
   Button,
   useColorMode,
@@ -12,19 +11,11 @@ import {
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import styles from './styles.module.css'
-import {
-  fadeInUp,
-  letterSpace,
-  simpleOpacity,
-  stagger,
-  scaleUp,
-} from 'config/animations'
+import { fadeInUp, simpleOpacity, stagger, scaleUp } from 'config/animations'
 import { SocialMedias } from 'config/sidebar'
 const Sidebar = () => {
   const { colorMode } = useColorMode()
   const display = useBreakpointValue({ base: 'none', lg: 'block' })
-  const surNameSize = useBreakpointValue({ base: '3xl', md: '4xl' })
-  const MotionHeading = motion(Heading)
   const MotionText = motion(Text)
   const MotionStack = motion(Stack)
   const MotionButton = motion(Button)
@@ -55,10 +46,6 @@ const Sidebar = () => {
         alignItems={{ xl: 'center' }}
       >
         <MotionStack variants={stagger} spacing={6} w="100">
-          
-          
-
-
           <MotionText
             variant="description"
             fontSize="small"
@@ -67,13 +54,15 @@ const Sidebar = () => {
             maxWidth={{ base: '100%', lg: '80%' }}
             color={colorMode === 'dark' ? '#DDE6ED' : 'black'}
           >
-            Hey! How nice of you to look at our  site,
+            Hey! How nice of you to look at our site,
             <Text variant="emphasis" as="span">
               {' '}
               Thank you!
             </Text>
-            <br />We are a Team of Software engineers that specializes at backend apis, front
-            end integration, responsive designs, multi-langual support and user friendly sites.
+            <br />
+            We are a Team of Software engineers that specializes at backend
+            apis, front end integration, responsive designs, multi-langual
+            support and user friendly sites.
           </MotionText>
           <MotionButton
             size="lg"
@@ -85,7 +74,7 @@ const Sidebar = () => {
             width="120px"
             variants={simpleOpacity}
             as={'a'}
-            href="mailto:marcjhon18@gmail.com"
+            href="mailto:kashifullah.dev@gmail.com"
             target="_blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -105,7 +94,12 @@ const Sidebar = () => {
                 target="_blank"
                 _focus={{ boxShadow: 'none' }}
               >
-                <Icon w={6} h={6} as={socMedia.icon} style={{color:colorMode === 'dark' ? '#DDE6ED' : 'black'}}/>
+                <Icon
+                  w={6}
+                  h={6}
+                  as={socMedia.icon}
+                  style={{ color: colorMode === 'dark' ? '#DDE6ED' : 'black' }}
+                />
               </Link>
             ))}
           </MotionBox>

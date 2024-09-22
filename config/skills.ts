@@ -1,18 +1,15 @@
 import { IconType } from 'react-icons'
+import { TbBrandNodejs } from 'react-icons/tb'
+import { TbBrandNextjs } from 'react-icons/tb'
 import {
-  SiDotNet,
   SiJavascript,
   SiTypescript,
-  SiNodeDotJs,
   SiGraphql,
   SiApollographql,
   SiPhp,
   SiReact,
-  SiNextDotJs,
   SiRedux,
-  SiStyledComponents,
   SiGhost,
-  SiVueDotJs,
   SiDocker,
   SiGooglecloud,
   SiCpanel,
@@ -23,8 +20,6 @@ import {
   SiMysql,
   SiMongodb,
   SiRedis,
-  SiSocketDotIo,
-  SiMaterialUi,
   SiFramer,
   SiGit,
   SiGnubash,
@@ -58,13 +53,10 @@ export const Skills: {
   [key in SkillCategory]: Skill[]
 } = {
   backend: [
-    {
-      name: 'C# - .NET.Core',
-      icon: SiDotNet,
-    },
+   
     {
       name: 'Node',
-      icon: SiNodeDotJs,
+      icon: TbBrandNodejs,
     },
     {
       name: 'Javascript (ES6+)',
@@ -90,7 +82,7 @@ export const Skills: {
     },
     {
       name: 'NextJS',
-      icon: SiNextDotJs,
+      icon: TbBrandNextjs,
     },
     {
       name: 'Apollo Graphql',
@@ -99,10 +91,6 @@ export const Skills: {
     {
       name: 'Redux',
       icon: SiRedux,
-    },
-    {
-      name: 'VueJS',
-      icon: SiVueDotJs,
     },
     {
       name: 'Ghost',
@@ -129,10 +117,6 @@ export const Skills: {
     {
       name: 'Redis',
       icon: SiRedis,
-    },
-    {
-      name: 'SocketIO',
-      icon: SiSocketDotIo,
     },
     {
       name: 'Google Pubsub',
@@ -166,17 +150,10 @@ export const Skills: {
     },
   ],
   'ui frameworks': [
-    {
-      name: 'Styled Components',
-      icon: SiStyledComponents,
-    },
+   
     {
       name: 'AntDesign',
       icon: AiOutlineAntDesign,
-    },
-    {
-      name: 'MaterialUI',
-      icon: SiMaterialUi,
     },
     {
       name: 'Framer Motion',

@@ -1,8 +1,9 @@
-import { memo } from 'react'
-import { Heading, Text, Stack, Link, Icon, Box } from '@chakra-ui/react'
-import { motion, Variants } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { RiHeartPulseFill, RiCopyleftLine, RiGithubFill } from 'react-icons/ri'
+import { memo } from 'react';
+import { Heading, Text, Stack, Link, Icon, Box } from '@chakra-ui/react';
+import { motion, Variants } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { RiHeartPulseFill, RiCopyleftLine, RiGithubFill } from 'react-icons/ri';
+
 const rimuruVariant: Variants = {
   shake: {
     rotate: [0, 15, 0, -15, 0],
@@ -22,10 +23,10 @@ const rimuruVariant: Variants = {
       ease: 'easeInOut',
     },
   },
-}
+};
 
 const GetInTouch = () => {
-  const [ref, inView] = useInView()
+  const [ref, inView] = useInView();
   return (
     <Stack
       width={{ base: '99%', lg: '60%', xl: '75%' }}
@@ -57,7 +58,7 @@ const GetInTouch = () => {
         stuff, anything is cool. So feel free to message me on any of my social
         media or shoot me an{' '}
         <Link
-          href="mailto:marcjhon18@gmail.com"
+          href="mailto:kashifullah.dev@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
@@ -67,7 +68,6 @@ const GetInTouch = () => {
       </Text>
 
       <Box
-        spacing={0.5}
         textAlign="center"
         fontFamily="monospace"
         paddingTop={{ base: 10, lg: 20, xl: 20 }}
@@ -84,12 +84,12 @@ const GetInTouch = () => {
           <Text as="span">
             <Icon as={RiGithubFill} h={6} w={6} /> <br />
             Designed and Made with <Icon as={RiHeartPulseFill} /> <br />
-            Wolve's Pack <Icon as={RiCopyleftLine} /> 2021
+            Wolves Pack <Icon as={RiCopyleftLine} /> 2021
           </Text>
         </Link>
       </Box>
     </Stack>
-  )
-}
+  );
+};
 
-export default memo(GetInTouch)
+export default memo(GetInTouch);
