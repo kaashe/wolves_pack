@@ -1,6 +1,6 @@
-import { Link } from '@chakra-ui/react'
+import { Link } from "@chakra-ui/react"
 
-export type Company = 'Deloitte' | 'SCG' | 'Blotocol'
+export type Company ="JJFasjion" | "ObsidianPm"
 
 export type CompanyDetail = {
   name: string
@@ -19,145 +19,72 @@ export type CompanyDetail = {
 export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
-  Deloitte: {
-    name: 'Deloitte',
-    longName: 'Deloitte Consulthing Phils. Delivery Center',
-    subDetail: 'Consulthing Phils. Delivery Center',
-    url: 'https://www2.deloitte.com/',
-    position: 'Software engineers Consultant',
-    duration: 'Sep 2021 - Present',
+  JJFasjion: {
+    name: "JJ Fashion",
+    longName: "JJ Fashion Limited AU",
+    subDetail: "e-commerce platerforms",
+    url: "https://d2ft5m8tvw50gy.cloudfront.net/login",
+    position: "Software engineers",
+    duration: "March 2024 - Aug 2024",
     logo: {
-      light: '/worked_at_logos/deloitte/Deloitte_logo_black.png',
-      dark: '/worked_at_logos/deloitte/Deloitte_logo.png',
+      light: "/worked_at_logos/jjFashion/jfLogo.jpg",
+      dark: "/worked_at_logos/jjFashion/jfLogo.jpg",
     },
     roles: [
       <>
-       Contributed to the design and development of a comprehensive .NET payment integration project for a client
-       That covered credit card payments and subscription management.
-       Introduced Stripe as a new payment provider within the system architecture.
-       Participated in triaging, fixing and adding new functionalitiesto multiple Azure powered APIs of the same client.
-      </>,
-      <>
-        Worked as a Sitecore Backend on new{' '}
+        Revamping the JJ Fashion Portal old UI into a new{" "}
         <Link
-          aria-label="Deloitte Digital AU"
-          href="https://www.deloittedigital.com.au/"
+          aria-label="JJ Fashion Portal"
+          href="https://d2ft5m8tvw50gy.cloudfront.net/login"
           target="_blank"
           rel="noreferrer"
         >
-          Deloitte Digital AU Site.
-        </Link>
-      </>,
-      <>
-        Udergone training for .NET Sitecore 10,
-        Sitecore SXA and different topologies it provides.{' '} and Passed {' '}
-        <Link
-          aria-label="Sitecore 10 .NET Developer Certification"
-          href="/certification/Lawingco-Sitecore 10 NET Developer Cert.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Sitecore 10 .NET Developer Certification.
-        </Link>
-      </>,
-    ],
-  },
-  SCG: {
-    name: 'Scentregroup',
-    longName: 'Scentregroup Limited AU',
-    subDetail: 'via Prosource BPO',
-    url: 'https://www.scentregroup.com/',
-    position: 'Software engineers',
-    duration: 'Feb 2020 - Sep 2021',
-    logo: {
-      light: '/worked_at_logos/scg/SCG_400x400.jpg',
-      dark: '/worked_at_logos/scg/SCG.png',
-    },
-    roles: [
-      <>
-        Revamping the legacy Partner Portal into a new{' '}
-        <Link
-          aria-label="Westfield Marketing Hub"
-          href="https://partner.scentregroup.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Westfield Marketing Hub
-        </Link>{' '}
-        using NextJS and Typescript. Restructuring the old express app into a
+          JJ Fashion Portal
+        </Link>{" "}
+        using React Js and Daisy UI. Restructuring the old app into a
         newer architectural design approach.
       </>,
       <>
-        Created multiple Contentful and Bynder extensions to improve BX process
-        better.
+        Created responsive UI, re-usable logics, re-usable components
       </>,
       <>
-        Worked on maintaining{' '}
+        Worked on optimizing{" "}
         <Link
-          variant="primaryLink"
-          href="https://www.westfield.com.au/"
+          aria-label="JJ Fashion Portal"
+          href="https://d2ft5m8tvw50gy.cloudfront.net/login"
           target="_blank"
           rel="noreferrer"
         >
-          Westfield
-        </Link>{' '}
-        main site and Graphql apis written in NodeJS.
-      </>,
-      <>
-        Migrating of existing marketing email related tools and batch jobs from
-        Responsys into new platform called Braze.
-      </>,
-      <>
-        Hired at early 2020, first major task was helping with selecting a new
-        marketing vendor that can scale and also enable us to have
-        personalisation as well, selecting{' '}
-        <Link
-          aria-label="Braze"
-          href="https://www.braze.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Braze
-        </Link>{' '}
-        as a result.
+          JJ Fashion Portal
+        </Link>{" "}
+        main site API request structure by converting it to RTK Query
       </>,
     ],
   },
-  Blotocol: {
-    name: 'Blotocol',
-    longName: 'Blotocol Philippines',
-    subDetail: 'formerly IVP Global Inc.',
-    url: 'https://blotocol.com/',
-    position: 'SeniorTeam',
-    duration: 'Nov 2016 - Feb 2020',
+  ObsidianPm: {
+    name: "ObsidianPm",
+    longName: "ObsidianPM Revenue Cycle Management System",
+    subDetail: "Medical Billing Company",
+    url: "http://dev.obsidianrcm.com/",
+    position: "Software engineers",
+    duration: "Oct 2022 - Present",
     logo: {
-      light: '/worked_at_logos/ivp/blotocol_logo-dark.png',
-      dark: '/worked_at_logos/ivp/blotocol-logo-white.png',
+      light: "/worked_at_logos/ObsidianPm/obspm.jpeg",
+      dark: "/worked_at_logos/ObsidianPm/obspm.jpeg",
     },
     roles: [
       <>
-        Developed a Twitter Raffle Campaign / Contest Bot called Camps with
-        statistics similar to Facebook Ads.
-      </>,
-      <>
-        In 2019 got promoted as SeniorTeam and worked with Cryto
-        Exchange, Smart Contracts and other APIs using several techs such as
-        NodeJS, .NET Core and React.
-      </>,
-      <>
-        Create highly scalable Japanese e-commerce sites. Most notable clients
-        were TV Tokyo, Layla EC using .NET.
-      </>,
-      <>
-        Hired at 2016, Undergone Japanese language training first. Shortly
-        after, worked with in-house .NET MVC Framework called ERS.
-      </>,
+        As a frontend team, we utilized Material UI to create responsive,
+        user-friendly interfaces and integrated APIs using RTK Query. We worked
+        together to enhance the user experience, optimize performance, and
+        resolve issues, ensuring smooth functionality and stability across the
+        application.
+      </>
     ],
   },
 }
 
 export const ExperiencesList = [
-  Experiences.Deloitte,
-  Experiences.SCG,
-  Experiences.Blotocol,
+  Experiences.JJFasjion,
+  Experiences.ObsidianPm,
 ]

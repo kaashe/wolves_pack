@@ -16,11 +16,11 @@ const DetailSection = () => (
       Projects we’ve worked on.
     </Heading>
     <Text variant="description">
-      Since 2016, had a privilege to work with several companies that enables me
-      to hone my skills and talents. These companies will always have a special
-      place in my heart. Currently We are working with{' '}
-      <Link href="https://www2.deloitte.com/" target="_blank" rel="noreferrer">
-        Deloitte
+      Since 2018, had a privilege to work with several companies that enables us
+      to hone skills and talents. These companies will always have a special
+      place in our heart. Currently We are working with{' '}
+      <Link href="http://dev.obsidianrcm.com/" target="_blank" rel="noreferrer">
+        ObsidianPM
       </Link>
       .
     </Text>

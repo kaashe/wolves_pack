@@ -28,10 +28,10 @@ const FeaturedWorksSection = () => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        Some of my works.
+        Some of our works.
       </Heading>
       <Text variant="description">
-        Check out some of the works I made at freelancing, company projects and
+        Check out some of the works, company projects and
         even case studies.
       </Text>
 
