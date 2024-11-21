@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { memo } from "react"
 import {
   Heading,
   Text,
@@ -7,23 +7,23 @@ import {
   SimpleGrid,
   Divider,
   useColorModeValue,
-} from '@chakra-ui/react'
-import { Article } from 'types/article'
+} from "@chakra-ui/react"
+import { Article } from "types/article"
 
 const DevToArticles = ({ articles }: { articles: Article[] }) => {
-  const bg = useColorModeValue('blackAlpha.50', 'whiteAlpha.100')
-  const borderColor = useColorModeValue('blackAlpha.300', 'whiteAlpha.100')
+  const bg = useColorModeValue("blackAlpha.50", "whiteAlpha.100")
+  const borderColor = useColorModeValue("blackAlpha.300", "whiteAlpha.100")
   const alphaHover = useColorModeValue(
-    'rgba(49, 151, 149, 0.06)',
-    'rgba(157, 236, 249, 0.06)'
+    "rgba(49, 151, 149, 0.06)",
+    "rgba(157, 236, 249, 0.06)"
   )
   return (
     <Stack
-      width={{ base: '99%', lg: '60%', xl: '75%' }}
+      width={{ base: "99%", lg: "60%", xl: "75%" }}
       height="100%"
       spacing={{ base: 6, xl: 8 }}
     >
-      <Heading
+      {/* <Heading
         size="2xl"
         style={{
           fontVariantCaps: 'small-caps',
@@ -83,7 +83,7 @@ const DevToArticles = ({ articles }: { articles: Article[] }) => {
             </Stack>
           </Link>
         ))}
-      </SimpleGrid>
+      </SimpleGrid> */}
     </Stack>
   )
 }
