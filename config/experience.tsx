@@ -1,6 +1,6 @@
 import { Link } from "@chakra-ui/react"
 
-export type Company ="JJFasjion" | "ObsidianPm"
+export type Company = "JJFasjion" | "ObsidianPm" | "AlmemarGroup"
 
 export type CompanyDetail = {
   name: string
@@ -41,12 +41,10 @@ export const Experiences: {
         >
           JJ Fashion Portal
         </Link>{" "}
-        using React Js and Daisy UI. Restructuring the old app into a
-        newer architectural design approach.
+        using React Js and Daisy UI. Restructuring the old app into a newer
+        architectural design approach.
       </>,
-      <>
-        Created responsive UI, re-usable logics, re-usable components
-      </>,
+      <>Created responsive UI, re-usable logics, re-usable components</>,
       <>
         Worked on optimizing{" "}
         <Link
@@ -61,16 +59,43 @@ export const Experiences: {
       </>,
     ],
   },
+  AlmemarGroup: {
+    name: "Almemar Trading & Cont Co",
+    longName: "Almemar Group",
+    subDetail: "Compnany Website",
+    url: "https://almemargroup.com/",
+    position: "Software engineers",
+    duration: "Sept 2024 - Sept 2024",
+    logo: {
+      light: "/worked_at_logos/almemarGroup/almemar.jpg",
+      dark: "/worked_at_logos/almemarGroup/almemar.jpg",
+    },
+    roles: [
+      <>
+        Created world class Website
+        <Link
+          aria-label="Almemar Trading & Cont Co"
+          href="https://almemargroup.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Almemar Group
+        </Link>{" "}
+        using React Js and Tailwind Css. Created world class Website
+      </>,
+      <>Created responsive UI, re-usable logics, re-usable components</>,
+    ],
+  },
   ObsidianPm: {
     name: "ObsidianPm",
     longName: "ObsidianPM Revenue Cycle Management System",
-    subDetail: "Medical Billing Company",
+    subDetail: "Medical Billing Application",
     url: "http://dev.obsidianrcm.com/",
     position: "Software engineers",
     duration: "Oct 2022 - Present",
     logo: {
-      light: "/worked_at_logos/ObsidianPm/obspm.jpeg",
-      dark: "/worked_at_logos/ObsidianPm/obspm.jpeg",
+      light: "/worked_at_logos/obsidianPm/logo.png",
+      dark: "/worked_at_logos/obsidianPm/logo.png",
     },
     roles: [
       <>
@@ -79,12 +104,13 @@ export const Experiences: {
         together to enhance the user experience, optimize performance, and
         resolve issues, ensuring smooth functionality and stability across the
         application.
-      </>
+      </>,
     ],
   },
 }
 
 export const ExperiencesList = [
   Experiences.JJFasjion,
+  Experiences.AlmemarGroup,
   Experiences.ObsidianPm,
 ]
