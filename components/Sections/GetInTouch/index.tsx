@@ -1,8 +1,8 @@
-import { memo } from 'react';
-import { Heading, Text, Stack, Link, Icon, Box } from '@chakra-ui/react';
-import { motion, Variants } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { RiHeartPulseFill, RiCopyleftLine, RiGithubFill } from 'react-icons/ri';
+import { memo } from "react"
+import { Heading, Text, Stack, Link, Icon, Box } from "@chakra-ui/react"
+import { motion, Variants } from "framer-motion"
+import { useInView } from "react-intersection-observer"
+import { RiHeartPulseFill, RiCopyleftLine, RiGithubFill } from "react-icons/ri"
 
 const rimuruVariant: Variants = {
   shake: {
@@ -11,7 +11,7 @@ const rimuruVariant: Variants = {
       delay: 1.2,
       duration: 0.5,
       repeat: 2,
-      ease: 'easeInOut',
+      ease: "easeInOut",
     },
   },
   jump: {
@@ -20,16 +20,16 @@ const rimuruVariant: Variants = {
       delay: 1.8,
       duration: 0.5,
       repeat: 3,
-      ease: 'easeInOut',
+      ease: "easeInOut",
     },
   },
-};
+}
 
 const GetInTouch = () => {
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView()
   return (
     <Stack
-      width={{ base: '99%', lg: '60%', xl: '75%' }}
+      width={{ base: "99%", lg: "60%", xl: "75%" }}
       height="100%"
       spacing={{ base: 6, xl: 8 }}
       as="footer"
@@ -37,26 +37,24 @@ const GetInTouch = () => {
       <Heading
         size="2xl"
         style={{
-          fontVariantCaps: 'small-caps',
+          fontVariantCaps: "small-caps",
         }}
       >
-        Say hi!{' '}
+        Say hi!{" "}
         <Text as="span" fontSize="2xl" variant="emphasis">
           <motion.div
-            style={{ display: 'inline-block' }}
+            style={{ display: "inline-block" }}
             variants={rimuruVariant}
             ref={ref}
-            animate={inView ? ['shake', 'jump'] : false}
+            animate={inView ? ["shake", "jump"] : false}
           >
             (⁀ᗢ⁀)
           </motion.div>
         </Text>
       </Heading>
       <Text variant="description">
-        Though, We are fairly introverted myself. I do reply to messages as long
-        as my human interaction battery lasts. Coding, work, movies or even weeb
-        stuff, anything is cool. So feel free to message me on any of my social
-        media or shoot me an{' '}
+        We do reply to messages as long as my human interaction battery lasts.
+        So feel free to message me on any of my social media or shoot me an{" "}
         <Link
           href="mailto:kashifullah.dev@gmail.com"
           target="_blank"
@@ -79,7 +77,7 @@ const GetInTouch = () => {
           rel="noreferrer"
           href="https://github.com/klawingco/kl_portfolio"
           target="_blank"
-          _focus={{ boxShadow: 'none' }}
+          _focus={{ boxShadow: "none" }}
         >
           <Text as="span">
             <Icon as={RiGithubFill} h={6} w={6} /> <br />
@@ -89,7 +87,7 @@ const GetInTouch = () => {
         </Link>
       </Box>
     </Stack>
-  );
-};
+  )
+}
 
-export default memo(GetInTouch);
+export default memo(GetInTouch)
