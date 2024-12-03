@@ -74,14 +74,14 @@ export const Experiences: {
       <>
         Created world class Website
         <Link
-          aria-label="Almemar Trading & Cont Co"
+          aria-label=" Almemar Trading & Cont Co"
           href="https://almemargroup.com/"
           target="_blank"
           rel="noreferrer"
         >
           Almemar Group
         </Link>{" "}
-        using React Js and Tailwind Css. Created world class Website
+        using React Js and Tailwind Css.
       </>,
       <>Created responsive UI, re-usable logics, re-usable components</>,
     ],
